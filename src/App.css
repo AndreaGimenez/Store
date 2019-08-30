@@ -1,27 +1,50 @@
+.contenedor-principal{
+    width: 1280px;
+}
+
 .header{
     background-color : red;
     height:146px;
     width:1280px;
+    margin-top: 10px;
 }
 
-.footer {	
+.footer {
     height: 320px;
-    width: 1280px;
     background-color: #1E1E1E;
+    color:white;
+}
+
+.topnav{
+    background: grey;
 }
 
 .body {
     background: green;
-    width:1280px;
 }
+
 .banner-slider{
     height: 400px;
-    /*width: 1280px;*/
     background: linear-gradient(270deg, #185592 0%, #0096BE 100%);
 }
 
 .listado-productos {
     height: 320px;
-    /*width: 1280px;*/
     background-color: pink;
+}
+
+.logo{
+  background: turquoise;
+}
+
+.buscador{
+  background: #185592;
+}
+
+.carrito{
+  background: yellow;
+}
+
+.menu{
+  background: violet;
 }

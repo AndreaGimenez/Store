@@ -8,10 +8,10 @@ import {BodyContent} from "./partes/body.js"
 class App extends Component {
   render(){
     return(
-      <div>
+      <div className="contenedor-principal">
         <Header titulo= "HEADER"/>
         <BodyContent titulo="BODY CONTENT"/>
-        <Footer />
+        <Footer titulo="FOOTER"/>
     </div>
     )
   } 
