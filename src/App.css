@@ -4,9 +4,8 @@
 
 .header{
     background-color : red;
-    height:146px;
+    height:400px;
     width:1280px;
-    margin-top: 10px;
 }
 
 .footer {
@@ -17,6 +16,11 @@
 
 .topnav{
     background: grey;
+    box-sizing: border-box;
+    height:100%;
+    width: 82%;
+    float: right;
+    /* border: 1px solid #D1D3D4; */
 }
 
 .body {
@@ -33,8 +37,17 @@
     background-color: pink;
 }
 
-.logo{
-  background: turquoise;
+#logo{
+  background: pink;
+  height:100%;
+  width: 18%;
+  position: relative;
+}
+
+.imagen-logo{
+  position:absolute;
+  top:22.5%;
+  left:15%;
 }
 
 .buscador{
@@ -47,4 +60,16 @@
 
 .menu{
   background: violet;
+}
+
+.footer-link{
+  background: white;
+  color: black;
+}
+
+.header-superior{
+  width:100%;
+  height: 22%;
+  background: black;
+  display:flex;
 }

@@ -13,8 +13,10 @@ Carrito
 Menú/Navegador */
         return (
             <div className="header">
-                <Logo />
-                <TopNav />
+                <div className="header-superior">
+                  <Logo />
+                  <TopNav />
+                </div>
                 <Buscador />
                 <Carrito />
                 <Menu />
