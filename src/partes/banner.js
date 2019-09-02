@@ -44,6 +44,7 @@ export class Banner extends Component {
           direction="left"
           clickFunction={ this.previousSlide }
           glyph="&#9664;" />
+
         <ImageSlide url={ slides[currentImageIndex]} />
 
           <Arrow
@@ -61,11 +62,10 @@ const ImageSlide = ({ url }) => {
     backgroundSize: 'cover',
     backgroundPosition: 'center'
   };
-  // console.log("url", url)
-  // let image_path = "./BANNERS/"+url.imgName ;
-  // console.log("image_path", image_path)
+  let image = require('../imagenes/BANNERS/' + url.imgName)  
   return (
-    <div>Banner1</div>
+
+    <img src={image} className="banner-slider"/>
 
   );
 }
