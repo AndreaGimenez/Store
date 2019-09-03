@@ -41,18 +41,9 @@ export class Banner extends Component {
       const { currentImageIndex, error, isLoaded, slides } = this.state;
 
       return(this.state.isLoaded ?
+
         <div>
-          <Arrow
-          direction="left"
-          clickFunction={ this.previousSlide }
-          glyph="&#9664;" />
-
         <ImageSlide url={ slides[currentImageIndex]} />
-
-          <Arrow
-          direction="right"
-          clickFunction={ this.nextSlide }
-          glyph="&#9654;" />
         </div> : loading)
 
     }
@@ -66,7 +57,15 @@ const ImageSlide = ({ url }) => {
   };
   let image = require('../imagenes/BANNERS/' + url.imgName)
   return (
-    <img src={image} className="banner-slider"/>
+    <div>
+        <Arrow
+        direction="left"
+        glyph="&#9664;" />
+      <img src={image} className="banner-slider"/>
+        <Arrow
+        direction="right"
+        glyph="&#9654;" />
+    </div>
   );
 }
 

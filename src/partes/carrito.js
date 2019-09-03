@@ -3,7 +3,7 @@ import imagen from '../imagenes/front-test-font-icon/fonts/front-test-font-icon.
 
 export const Carrito = (props) => {
   return(<div className="carrito">
-    <span>{props.title}</span>
+    <span className="mi-carrito">{props.title}</span>
     <img src={imagen}/>
   </div>)
 }

@@ -31,10 +31,15 @@ export class Menu extends Component{
 
   render(){
     const { isLoaded, categories } = this.state;
-
+    console.log("categories",categories)
     return(this.state.isLoaded ?
       <div className="menu">
-          menu
+          {categories.map((categorie,key) =>
+            menuItem(categorie))}
       </div> : <div></div>)
   }
 }
+
+const menuItem = (categorie) => <div className="menu-item">
+    <a href={categorie.href} style={{textDecoration: "none" }}><span className="menu-names">{categorie.title}</span></a>
+</div>

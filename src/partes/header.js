@@ -17,6 +17,7 @@ Menú/Navegador */
                   <Logo />
                   <div className="superior-derecho">
                     <TopNav />
+                    <hr className="line"/>
                     <div className="busquedas">
                       <Buscador title="BUSCADOR"/>
                       <Carrito title="MI CARRITO"/>

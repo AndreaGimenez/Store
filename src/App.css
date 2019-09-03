@@ -3,7 +3,6 @@
 }
 
 .header{
-    background-color : red;
     height:146px;
     width:1280px;
 }
@@ -15,12 +14,10 @@
 }
 
 .topnav{
-    background: grey;
     box-sizing: border-box;
     height:38%;
     width: 100%;
     float: right;
-    /* border: 1px solid #D1D3D4; */
 }
 
 .body {
@@ -35,11 +32,9 @@
 
 .listado-productos {
     height: 320px;
-    background-color: pink;
 }
 
 #logo{
-  background: pink;
   height:100%;
   width: 18%;
   position: relative;
@@ -51,8 +46,8 @@
 }
 .imagen-logo{
   position:absolute;
-  top:22.5%;
-  left:15%;
+  top:19.5%;
+  left:13%;
 }
 
 .busquedas{
@@ -62,17 +57,28 @@
 }
 .buscador{
   width: 80%;
-  background: green;
   display: flex;
+
 }
 
+.buscador-position{
+  width:100%;
+  height:100%;
+  color: #1E1E1E;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 27px;
+  border:none;
+}
 .carrito{
-  background: yellow;
 }
 
 .menu{
   background: violet;
   height: 100%;
+  display:flex;
 }
 
 .footer-link{
@@ -101,8 +107,65 @@
 }
 .carrito{
   height: 100%;
-  width: 20%;
-    background: red;
+  width: 20;
   float: right;
+  text-align: center;
+  background-color: #1E1E1E;
+}
+
+.mi-carrito{
+  height: 100%;
+  width: 100%;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  position:relative;
+  top:20.5%;
+  left:9%;
+}
+
+.menu-item{
+  width: 256px;
+  height: 100%;
+  background-color: #1DB779;
+  color: #FFFFFF;
+}
+
+.menu-names{
+  height: 20px;
+  width: 210px;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  position:relative;
+  top:34.5%;
+  left:28%;
+  }
+
+.line {
+  box-sizing: border-box;
+  height: 1px;
+  width: 100%;
+  border: 1px solid #D1D3D4;
+  margin:0;
+}
+
+.topnav-items{
+  float: right;
+  text-decoration: none;
+    margin-left:6%;
+}
+
+.topnav-item{
+  color: #1DB779;
+  font-family: "Open Sans";
+  font-size: 13px;
+  line-height: 18px;
   text-align: center;
 }
