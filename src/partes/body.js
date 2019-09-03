@@ -7,9 +7,8 @@ export class BodyContent extends Component{
 Listado de producto con titulo y filtros */
         return(
             <div className="body">
-                {this.props.titulo}
-                <Banner titulo= "BANNER"/>
-                <ProductosLista titulo="PRODUCTOS LISTA"/>
+                <Banner title= "BANNER"/>
+                <ProductosLista title="PRODUCTOS LISTA"/>
             </div>
         )
     }
