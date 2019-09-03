@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React from 'react'
+import imagen from '../imagenes/front-test-font-icon/fonts/front-test-font-icon.svg'
 
-export class Carrito extends Component{
-  render(){
-    return(
-      <div className="carrito">ESTO ES EL CARRITO</div>
-    )
-  }
+export const Carrito = (props) => {
+  return(<div className="carrito">
+    <span>{props.title}</span>
+    <img src={imagen}/>
+  </div>)
 }

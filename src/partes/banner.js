@@ -1,5 +1,5 @@
 import React , {Component,Fragment} from "react";
-import Banner1 from "../imagenes/BANNERS/Banner_1.png"
+
 
 export class Banner extends Component {
     constructor (props) {
@@ -9,6 +9,8 @@ export class Banner extends Component {
       currentImageIndex: 0,
       isLoaded: false,
       };
+
+
     }
 
     componentDidMount(){
@@ -62,11 +64,9 @@ const ImageSlide = ({ url }) => {
     backgroundSize: 'cover',
     backgroundPosition: 'center'
   };
-  let image = require('../imagenes/BANNERS/' + url.imgName)  
+  let image = require('../imagenes/BANNERS/' + url.imgName)
   return (
-
     <img src={image} className="banner-slider"/>
-
   );
 }
 

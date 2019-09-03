@@ -9,8 +9,8 @@ class App extends Component {
     return(
       <div className="contenedor-principal">
         <Header titulo= "HEADER"/>
-      { /* <BodyContent titulo="BODY CONTENT"/>
-        <Footer titulo="FOOTER"/> */}
+        <BodyContent titulo="BODY CONTENT"/>
+        <Footer titulo="FOOTER"/>
     </div>
     )
   }
