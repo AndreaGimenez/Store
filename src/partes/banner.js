@@ -1,5 +1,6 @@
 import React , {Component,Fragment} from "react";
-
+import Slide from "./slide.js"
+import Arrow from './arrow';
 
 export class Banner extends Component {
     constructor (props) {
@@ -42,37 +43,12 @@ export class Banner extends Component {
 
       return(this.state.isLoaded ?
 
-        <div>
-        <ImageSlide url={ slides[currentImageIndex]} />
-        </div> : loading)
+        <div className="slide">
+	        <Slide imagen={slides[currentImageIndex]}/>
+          <Arrow direction="right" glyph="&#9654;" move={()=>{this.setState({currentImageIndex: currentImageIndex + 1})}}/>
+          <Arrow  direction="left" glyph="&#9664;" move={()=>{this.setState({currentImageIndex: currentImageIndex - 1})}}/>
+      </div>
+        : loading)
 
     }
 }
-
-const ImageSlide = ({ url }) => {
-  const styles = {
-    backgroundImage: `url(${url})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center'
-  };
-  let image = require('../imagenes/BANNERS/' + url.imgName)
-  return (
-    <div>
-        <Arrow
-        direction="left"
-        glyph="&#9664;" />
-      <img src={image} className="banner-slider"/>
-        <Arrow
-        direction="right"
-        glyph="&#9654;" />
-    </div>
-  );
-}
-
-const Arrow = ({ direction, clickFunction, glyph }) => (
-  <div
-    className={ `slide-arrow ${direction}` }
-    onClick={ clickFunction }>
-    { glyph }
-  </div>
-);
